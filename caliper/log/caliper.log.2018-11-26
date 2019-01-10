@@ -1,0 +1,1107 @@
+2018-11-26T22:52:03+08:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console","error":"console","warn":"console"}
+
+2018-11-26T22:52:03+08:00 - INFO [bench-flow.js]: ####### Caliper Test ###### 
+
+2018-11-26T22:52:03+08:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric/2org2peer/docker-compose.yaml up -d 
+
+2018-11-26T22:52:05+08:00 - ERROR [bench-flow.js]: Unsuccessful command execution. Error code: 1. Terminating signal: null 
+
+2018-11-26T22:52:05+08:00 - ERROR [bench-flow.js]: Error: Error: Command failed: docker-compose -f network/fabric/2org2peer/docker-compose.yaml up -d
+Pulling orderer.example.com (hyperledger/fabric-orderer:x86_64-1.1.0)...
+Get https://registry-1.docker.io/v2/: EOF
+
+    at ChildProcess.exithandler (child_process.js:275:12)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at maybeClose (internal/child_process.js:925:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5) 
+
+2018-11-26T22:52:05+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2018-11-26T22:52:05+08:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric/2org2peer/docker-compose.yaml down;docker rm $(docker ps -aq);docker rmi $(docker images dev* -q) 
+
+2018-11-26T22:52:05+08:00 - ERROR [bench-flow.js]: Unsuccessful command execution. Error code: 1. Terminating signal: null 
+
+2018-11-26T22:52:05+08:00 - ERROR [benchmark/simple/main.js]: Error while executing the benchmark: Error: Command failed: docker-compose -f network/fabric/2org2peer/docker-compose.yaml down;docker rm $(docker ps -aq);docker rmi $(docker images dev* -q)
+Removing network 2org2peer_default
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]
+
+Remove one or more containers
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+
+    at ChildProcess.exithandler (child_process.js:275:12)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at maybeClose (internal/child_process.js:925:16)
+    at Socket.stream.socket.on (internal/child_process.js:346:11)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at Pipe._handle.close [as _onclose] (net.js:567:12) 
+
+2018-11-26T23:12:30+08:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console","error":"console","warn":"console"}
+
+2018-11-26T23:12:30+08:00 - INFO [bench-flow.js]: ####### Caliper Test ###### 
+
+2018-11-26T23:12:30+08:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric/2org2peer/docker-compose.yaml up -d 
+
+2018-11-26T23:13:41+08:00 - INFO [create-channel.js]: Creating mychannel... 
+
+2018-11-26T23:13:42+08:00 - INFO [create-channel.js]: Created mychannel successfully 
+
+2018-11-26T23:13:42+08:00 - INFO [create-channel.js]: Sleeping 5s... 
+
+2018-11-26T23:13:47+08:00 - INFO [join-channel.js]: Joining channels... 
+
+2018-11-26T23:13:47+08:00 - INFO [join-channel.js]: Joining mychannel... 
+
+2018-11-26T23:13:47+08:00 - INFO [join-channel.js]: Successfully joined peerOrg1's peers to mychannel 
+
+2018-11-26T23:13:48+08:00 - INFO [join-channel.js]: Successfully joined peerOrg2's peers to mychannel 
+
+2018-11-26T23:13:48+08:00 - INFO [join-channel.js]: Successfully joined mychannel 
+
+2018-11-26T23:13:48+08:00 - INFO [install-chaincode.js]: Installing chaincodes... 
+
+2018-11-26T23:13:48+08:00 - INFO [install-chaincode.js]: Installed chaincode simple successfully in all peers 
+
+2018-11-26T23:13:48+08:00 - INFO [instantiate-chaincode.js]: Instantiating chaincodes... 
+
+2018-11-26T23:15:48+08:00 - ERROR [instantiate-chaincode.js]: Failed to instantiate chaincodes: Error: Failed to send instantiate Proposal or receive valid response. Response null or status is not 200.
+    at Object.instantiateChaincode (/home/qmq/tool/caliper/src/fabric/e2eUtils.js:305:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) 
+
+2018-11-26T23:15:48+08:00 - ERROR [fabric.js]: Fabric chaincode install failed: Error: Failed to send instantiate Proposal or receive valid response. Response null or status is not 200.
+    at Object.instantiateChaincode (/home/qmq/tool/caliper/src/fabric/e2eUtils.js:305:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) 
+
+2018-11-26T23:15:48+08:00 - ERROR [bench-flow.js]: Error: Error: Failed to send instantiate Proposal or receive valid response. Response null or status is not 200.
+    at Object.instantiateChaincode (/home/qmq/tool/caliper/src/fabric/e2eUtils.js:305:19)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) 
+
+2018-11-26T23:15:48+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2018-11-26T23:15:48+08:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric/2org2peer/docker-compose.yaml down;docker rm $(docker ps -aq);docker rmi $(docker images dev* -q) 
+
+2018-11-26T23:15:59+08:00 - ERROR [bench-flow.js]: Unsuccessful command execution. Error code: 1. Terminating signal: null 
+
+2018-11-26T23:15:59+08:00 - ERROR [benchmark/simple/main.js]: Error while executing the benchmark: Error: Command failed: docker-compose -f network/fabric/2org2peer/docker-compose.yaml down;docker rm $(docker ps -aq);docker rmi $(docker images dev* -q)
+Stopping peer1.org1.example.com         ... 
+Stopping peer0.org1.example.com         ... 
+Stopping peer0.org2.example.com         ... 
+Stopping peer1.org2.example.com         ... 
+Stopping couchdb.peer0.org1.example.com ... 
+Stopping couchdb.peer0.org2.example.com ... 
+Stopping ca.org2.example.com            ... 
+Stopping ca.org1.example.com            ... 
+Stopping couchdb.peer1.org2.example.com ... 
+Stopping orderer.example.com            ... 
+Stopping couchdb.peer1.org1.example.com ... 
+[11A[2KStopping peer1.org1.example.com         ... [32mdone[0m[11B[8A[2KStopping peer1.org2.example.com         ... [32mdone[0m[8B[9A[2KStopping peer0.org2.example.com         ... [32mdone[0m[9B[6A[2KStopping couchdb.peer0.org2.example.com ... [32mdone[0m[6B[3A[2KStopping couchdb.peer1.org2.example.com ... [32mdone[0m[3B[10A[2KStopping peer0.org1.example.com         ... [32mdone[0m[10B[1A[2KStopping couchdb.peer1.org1.example.com ... [32mdone[0m[1B[7A[2KStopping couchdb.peer0.org1.example.com ... [32mdone[0m[7B[2A[2KStopping orderer.example.com            ... [32mdone[0m[2B[5A[2KStopping ca.org2.example.com            ... [32mdone[0m[5B[4A[2KStopping ca.org1.example.com            ... [32mdone[0m[4BRemoving peer1.org1.example.com         ... 
+Removing peer0.org1.example.com         ... 
+Removing peer0.org2.example.com         ... 
+Removing peer1.org2.example.com         ... 
+Removing couchdb.peer0.org1.example.com ... 
+Removing couchdb.peer0.org2.example.com ... 
+Removing ca.org2.example.com            ... 
+Removing ca.org1.example.com            ... 
+Removing couchdb.peer1.org2.example.com ... 
+Removing orderer.example.com            ... 
+Removing couchdb.peer1.org1.example.com ... 
+[11A[2KRemoving peer1.org1.example.com         ... [32mdone[0m[11B[3A[2KRemoving couchdb.peer1.org2.example.com ... [32mdone[0m[3B[4A[2KRemoving ca.org1.example.com            ... [32mdone[0m[4B[1A[2KRemoving couchdb.peer1.org1.example.com ... [32mdone[0m[1B[9A[2KRemoving peer0.org2.example.com         ... [32mdone[0m[9B[10A[2KRemoving peer0.org1.example.com         ... [32mdone[0m[10B[5A[2KRemoving ca.org2.example.com            ... [32mdone[0m[5B[7A[2KRemoving couchdb.peer0.org1.example.com ... [32mdone[0m[7B[6A[2KRemoving couchdb.peer0.org2.example.com ... [32mdone[0m[6B[2A[2KRemoving orderer.example.com            ... [32mdone[0m[2B[8A[2KRemoving peer1.org2.example.com         ... [32mdone[0m[8BRemoving network 2org2peer_default
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+
+    at ChildProcess.exithandler (child_process.js:275:12)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at maybeClose (internal/child_process.js:925:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5) 
+
+2018-11-26T23:41:25+08:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console","error":"console","warn":"console"}
+
+2018-11-26T23:41:25+08:00 - INFO [bench-flow.js]: ####### Caliper Test ###### 
+
+2018-11-26T23:41:26+08:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric/2org2peer/docker-compose.yaml up -d 
+
+2018-11-26T23:41:38+08:00 - INFO [create-channel.js]: Creating mychannel... 
+
+2018-11-26T23:41:38+08:00 - INFO [create-channel.js]: Created mychannel successfully 
+
+2018-11-26T23:41:38+08:00 - INFO [create-channel.js]: Sleeping 5s... 
+
+2018-11-26T23:41:43+08:00 - INFO [join-channel.js]: Joining channels... 
+
+2018-11-26T23:41:43+08:00 - INFO [join-channel.js]: Joining mychannel... 
+
+2018-11-26T23:41:43+08:00 - INFO [join-channel.js]: Successfully joined peerOrg1's peers to mychannel 
+
+2018-11-26T23:41:44+08:00 - INFO [join-channel.js]: Successfully joined peerOrg2's peers to mychannel 
+
+2018-11-26T23:41:44+08:00 - INFO [join-channel.js]: Successfully joined mychannel 
+
+2018-11-26T23:41:44+08:00 - INFO [install-chaincode.js]: Installing chaincodes... 
+
+2018-11-26T23:41:44+08:00 - INFO [install-chaincode.js]: Installed chaincode simple successfully in all peers 
+
+2018-11-26T23:41:44+08:00 - INFO [instantiate-chaincode.js]: Instantiating chaincodes... 
+
+2018-11-26T23:44:59+08:00 - INFO [e2eUtils.js]: The chaincode instantiate transaction was valid. 
+
+2018-11-26T23:44:59+08:00 - INFO [instantiate-chaincode.js]: Instantiated chaincode simple successfully 
+
+2018-11-26T23:44:59+08:00 - INFO [instantiate-chaincode.js]: Sleeping 5s... 
+
+2018-11-26T23:45:04+08:00 - INFO [bench-flow.js]: Started monitor successfully 
+
+2018-11-26T23:45:04+08:00 - INFO [bench-flow.js]: ###### Testing 'open' ###### 
+
+2018-11-26T23:45:04+08:00 - INFO [bench-flow.js]: ------ Test round 1 ------ 
+
+2018-11-26T23:45:05+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2018-11-26T23:45:05+08:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console","error":"console","warn":"console"}
+
+2018-11-26T23:45:05+08:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console","error":"console","warn":"console"}
+
+2018-11-26T23:45:05+08:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console","error":"console","warn":"console"}
+
+2018-11-26T23:45:05+08:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console","error":"console","warn":"console"}
+
+2018-11-26T23:45:05+08:00 - DEBUG Successfully constructed a winston logger with configurations
+	{"debug":"log/caliper.log","info":"console","error":"console","warn":"console"}
+
+2018-11-26T23:45:06+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2018-11-26T23:45:07+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2018-11-26T23:45:05+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2018-11-26T23:45:06+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:45:05+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2018-11-26T23:45:06+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:45:05+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2018-11-26T23:45:06+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:45:07+08:00 - DEBUG [local-client.js]: Info: client 26451 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:45:07+08:00 - DEBUG [local-client.js]: Info: client 26441 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:45:07+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2018-11-26T23:45:07+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2018-11-26T23:45:07+08:00 - DEBUG [local-client.js]: Info: client 26436 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:45:07+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2018-11-26T23:45:05+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2018-11-26T23:45:07+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:45:05+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2018-11-26T23:45:07+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:45:08+08:00 - DEBUG [local-client.js]: Info: client 26435 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:45:08+08:00 - DEBUG [local-client.js]: Info: client 26446 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:45:08+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2018-11-26T23:45:08+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2018-11-26T23:45:08+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3 Succ: 0 Fail:0 Unfinished:3 
+
+2018-11-26T23:45:09+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 53 Succ: 8 Fail:0 Unfinished:45 
+
+2018-11-26T23:45:10+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 104 Succ: 21 Fail:0 Unfinished:83 
+
+2018-11-26T23:45:11+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 154 Succ: 34 Fail:0 Unfinished:120 
+
+2018-11-26T23:45:12+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 204 Succ: 44 Fail:0 Unfinished:160 
+
+2018-11-26T23:45:13+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 254 Succ: 60 Fail:0 Unfinished:194 
+
+2018-11-26T23:45:14+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 304 Succ: 77 Fail:0 Unfinished:227 
+
+2018-11-26T23:45:15+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 354 Succ: 90 Fail:0 Unfinished:264 
+
+2018-11-26T23:45:16+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 404 Succ: 109 Fail:0 Unfinished:295 
+
+2018-11-26T23:45:17+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 454 Succ: 121 Fail:0 Unfinished:333 
+
+2018-11-26T23:45:18+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 504 Succ: 135 Fail:0 Unfinished:369 
+
+2018-11-26T23:45:19+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 554 Succ: 152 Fail:0 Unfinished:402 
+
+2018-11-26T23:45:20+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 604 Succ: 170 Fail:0 Unfinished:434 
+
+2018-11-26T23:45:21+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 654 Succ: 184 Fail:0 Unfinished:470 
+
+2018-11-26T23:45:22+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 704 Succ: 204 Fail:0 Unfinished:500 
+
+2018-11-26T23:45:23+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 754 Succ: 218 Fail:0 Unfinished:536 
+
+2018-11-26T23:45:24+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 804 Succ: 236 Fail:0 Unfinished:568 
+
+2018-11-26T23:45:25+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 854 Succ: 258 Fail:0 Unfinished:596 
+
+2018-11-26T23:45:26+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 904 Succ: 269 Fail:0 Unfinished:635 
+
+2018-11-26T23:45:27+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 954 Succ: 288 Fail:0 Unfinished:666 
+
+2018-11-26T23:45:28+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 308 Fail:0 Unfinished:692 
+
+2018-11-26T23:45:29+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 358 Fail:0 Unfinished:642 
+
+2018-11-26T23:45:30+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 422 Fail:0 Unfinished:578 
+
+2018-11-26T23:45:31+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 480 Fail:0 Unfinished:520 
+
+2018-11-26T23:45:32+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 541 Fail:0 Unfinished:459 
+
+2018-11-26T23:45:33+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 597 Fail:0 Unfinished:403 
+
+2018-11-26T23:45:34+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 650 Fail:0 Unfinished:350 
+
+2018-11-26T23:45:35+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 710 Fail:0 Unfinished:290 
+
+2018-11-26T23:45:36+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 772 Fail:0 Unfinished:228 
+
+2018-11-26T23:45:37+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 840 Fail:0 Unfinished:160 
+
+2018-11-26T23:45:38+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 908 Fail:0 Unfinished:92 
+
+2018-11-26T23:45:39+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 984 Fail:0 Unfinished:16 
+
+2018-11-26T23:45:40+08:00 - INFO [bench-flow.js]: ###test result:### 
+
+2018-11-26T23:45:40+08:00 - INFO [bench-flow.js]: +------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|------|------|-----------|-------------|-------------|-------------|------------|
+| open | 1000 | 0    | 49 tps    | 15.21 s     | 0.70 s      | 11.36 s     | 32 tps     |
++------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2018-11-26T23:45:40+08:00 - INFO [bench-flow.js]: ### resource stats ### 
+
+2018-11-26T23:45:40+08:00 - INFO [bench-flow.js]: +---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Process | node local-client.js(avg)         | 112.1MB     | 102.4MB     | 74.02%   | 14.10%   | -          | -           |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer0.org1.example.co...le-v0 | 6.4MB       | 5.7MB       | 5.26%    | 2.41%    | 1.5MB      | 754.4KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer0.org2.example.co...le-v0 | 6.4MB       | 5.8MB       | 4.80%    | 2.48%    | 1.5MB      | 753.9KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer1.org1.example.co...le-v0 | 5.5MB       | 4.7MB       | 1.48%    | 0.76%    | 447.3KB    | 233.0KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer1.org2.example.co...le-v0 | 5.3MB       | 4.6MB       | 1.55%    | 0.71%    | 449.1KB    | 235.6KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer1.org1.example.com            | 104.9MB     | 97.6MB      | 25.77%   | 16.60%   | 7.0MB      | 5.8MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer0.org2.example.com            | 114.1MB     | 106.5MB     | 35.00%   | 25.73%   | 9.6MB      | 12.1MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer0.org1.example.com            | 101.0MB     | 93.5MB      | 35.20%   | 24.94%   | 9.5MB      | 11.9MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer1.org2.example.com            | 112.0MB     | 102.3MB     | 25.32%   | 15.94%   | 6.9MB      | 2.0MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org1.example.com    | 105.1MB     | 101.2MB     | 79.98%   | 37.69%   | 1.9MB      | 3.8MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | ca.org1.example.com               | 6.5MB       | 6.4MB       | 0.00%    | 0.00%    | 1.2KB      | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org2.example.com    | 104.3MB     | 101.1MB     | 54.52%   | 30.96%   | 1.2MB      | 2.5MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | ca.org2.example.com               | 6.4MB       | 6.3MB       | 0.00%    | 0.00%    | 1.3KB      | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | orderer.example.com               | 20.6MB      | 18.0MB      | 24.80%   | 11.55%   | 4.5MB      | 16.0MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org2.example.com    | 105.2MB     | 102.2MB     | 80.88%   | 38.98%   | 1.9MB      | 3.8MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org1.example.com    | 104.7MB     | 102.0MB     | 58.18%   | 32.56%   | 1.2MB      | 2.5MB       |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+
+ 
+
+2018-11-26T23:45:40+08:00 - INFO [bench-flow.js]: ------ Passed 'open' testing ------ 
+
+2018-11-26T23:45:40+08:00 - INFO [bench-flow.js]: Waiting 5 seconds for the next round... 
+
+2018-11-26T23:45:40+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2018-11-26T23:45:41+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2018-11-26T23:45:42+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2018-11-26T23:45:43+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2018-11-26T23:45:44+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2018-11-26T23:45:45+08:00 - INFO [bench-flow.js]: ------ Test round 2 ------ 
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":2,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":2,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":2,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":2,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":2,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: Info: client 26446 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: Info: client 26435 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:45:45+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2018-11-26T23:45:45+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: Info: client 26436 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:45:45+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: Info: client 26441 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:45:45+08:00 - DEBUG [local-client.js]: Info: client 26451 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:45:45+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2018-11-26T23:45:45+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2018-11-26T23:45:45+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2018-11-26T23:45:46+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1090 Succ: 1003 Fail:0 Unfinished:87 
+
+2018-11-26T23:45:47+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1190 Succ: 1008 Fail:0 Unfinished:182 
+
+2018-11-26T23:45:48+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1290 Succ: 1016 Fail:0 Unfinished:274 
+
+2018-11-26T23:45:49+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1390 Succ: 1020 Fail:0 Unfinished:370 
+
+2018-11-26T23:45:50+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1490 Succ: 1028 Fail:0 Unfinished:462 
+
+2018-11-26T23:45:51+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1590 Succ: 1029 Fail:0 Unfinished:561 
+
+2018-11-26T23:45:53+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1691 Succ: 1030 Fail:0 Unfinished:661 
+
+2018-11-26T23:45:54+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1793 Succ: 1035 Fail:0 Unfinished:758 
+
+2018-11-26T23:45:55+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1893 Succ: 1037 Fail:0 Unfinished:856 
+
+2018-11-26T23:45:56+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1992 Succ: 1037 Fail:0 Unfinished:955 
+
+2018-11-26T23:45:57+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1044 Fail:0 Unfinished:956 
+
+2018-11-26T23:45:58+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1049 Fail:0 Unfinished:951 
+
+2018-11-26T23:45:59+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1056 Fail:0 Unfinished:944 
+
+2018-11-26T23:46:00+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1062 Fail:0 Unfinished:938 
+
+2018-11-26T23:46:01+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1085 Fail:0 Unfinished:915 
+
+2018-11-26T23:46:02+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1120 Fail:0 Unfinished:880 
+
+2018-11-26T23:46:03+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1159 Fail:0 Unfinished:841 
+
+2018-11-26T23:46:04+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1218 Fail:0 Unfinished:782 
+
+2018-11-26T23:46:05+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1277 Fail:0 Unfinished:723 
+
+2018-11-26T23:46:06+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1327 Fail:0 Unfinished:673 
+
+2018-11-26T23:46:07+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1376 Fail:0 Unfinished:624 
+
+2018-11-26T23:46:08+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1437 Fail:0 Unfinished:563 
+
+2018-11-26T23:46:09+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1485 Fail:0 Unfinished:515 
+
+2018-11-26T23:46:10+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1547 Fail:0 Unfinished:453 
+
+2018-11-26T23:46:11+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1591 Fail:0 Unfinished:409 
+
+2018-11-26T23:46:12+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1657 Fail:0 Unfinished:343 
+
+2018-11-26T23:46:13+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1721 Fail:0 Unfinished:279 
+
+2018-11-26T23:46:14+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1791 Fail:0 Unfinished:209 
+
+2018-11-26T23:46:15+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1879 Fail:0 Unfinished:121 
+
+2018-11-26T23:46:16+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1944 Fail:0 Unfinished:56 
+
+2018-11-26T23:46:17+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2018-11-26T23:46:17+08:00 - INFO [bench-flow.js]: ###test result:### 
+
+2018-11-26T23:46:17+08:00 - INFO [bench-flow.js]: +------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|------|------|-----------|-------------|-------------|-------------|------------|
+| open | 1000 | 0    | 99 tps    | 24.86 s     | 0.55 s      | 17.39 s     | 32 tps     |
++------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2018-11-26T23:46:17+08:00 - INFO [bench-flow.js]: ### resource stats ### 
+
+2018-11-26T23:46:17+08:00 - INFO [bench-flow.js]: +---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Process | node local-client.js(avg)         | 114.6MB     | 113.6MB     | 23.23%   | 8.79%    | -          | -           |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer0.org1.example.co...le-v0 | 8.4MB       | 7.8MB       | 8.02%    | 2.33%    | 1.2MB      | 520.5KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer0.org2.example.co...le-v0 | 8.4MB       | 8.0MB       | 7.93%    | 1.88%    | 1.2MB      | 492.0KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer1.org1.example.co...le-v0 | 6.2MB       | 6.1MB       | 2.78%    | 0.81%    | 363.7KB    | 190.2KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer1.org2.example.co...le-v0 | 6.1MB       | 6.1MB       | 2.93%    | 0.79%    | 367.4KB    | 189.5KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer1.org1.example.com            | 109.9MB     | 107.1MB     | 25.95%   | 19.20%   | 6.5MB      | 5.5MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer0.org2.example.com            | 121.0MB     | 117.6MB     | 35.23%   | 27.07%   | 8.7MB      | 7.4MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer0.org1.example.com            | 107.3MB     | 103.9MB     | 45.21%   | 28.93%   | 8.9MB      | 14.9MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer1.org2.example.com            | 116.9MB     | 114.2MB     | 26.67%   | 18.45%   | 6.5MB      | 1.8MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org1.example.com    | 123.4MB     | 119.2MB     | 80.44%   | 46.03%   | 2.0MB      | 3.7MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | ca.org1.example.com               | 6.5MB       | 6.5MB       | 0.00%    | 0.00%    | 177B       | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org2.example.com    | 113.0MB     | 108.4MB     | 58.54%   | 37.20%   | 1.2MB      | 2.4MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | ca.org2.example.com               | 6.4MB       | 6.4MB       | 0.00%    | 0.00%    | 0B         | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | orderer.example.com               | 37.8MB      | 31.6MB      | 50.87%   | 13.02%   | 4.1MB      | 15.1MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org2.example.com    | 133.8MB     | 125.1MB     | 76.73%   | 44.88%   | 2.0MB      | 3.6MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org1.example.com    | 113.1MB     | 108.8MB     | 61.89%   | 38.95%   | 1.2MB      | 2.4MB       |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+
+ 
+
+2018-11-26T23:46:17+08:00 - INFO [bench-flow.js]: ------ Passed 'open' testing ------ 
+
+2018-11-26T23:46:17+08:00 - INFO [bench-flow.js]: Waiting 5 seconds for the next round... 
+
+2018-11-26T23:46:18+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2018-11-26T23:46:19+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2018-11-26T23:46:20+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2018-11-26T23:46:21+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2018-11-26T23:46:22+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2018-11-26T23:46:22+08:00 - INFO [bench-flow.js]: ------ Test round 3 ------ 
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":3,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":3,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":3,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":3,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":3,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: Info: client 26451 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:46:22+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: Info: client 26441 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: Info: client 26436 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: Info: client 26446 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:46:22+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2018-11-26T23:46:22+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2018-11-26T23:46:22+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2018-11-26T23:46:22+08:00 - DEBUG [local-client.js]: Info: client 26435 start test runFixedNumber():opening accounts 
+
+2018-11-26T23:46:22+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2018-11-26T23:46:23+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2018-11-26T23:46:24+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2139 Succ: 2003 Fail:0 Unfinished:136 
+
+2018-11-26T23:46:25+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2289 Succ: 2008 Fail:0 Unfinished:281 
+
+2018-11-26T23:46:26+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2439 Succ: 2011 Fail:0 Unfinished:428 
+
+2018-11-26T23:46:27+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2589 Succ: 2017 Fail:0 Unfinished:572 
+
+2018-11-26T23:46:28+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2740 Succ: 2025 Fail:0 Unfinished:715 
+
+2018-11-26T23:46:29+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2890 Succ: 2027 Fail:0 Unfinished:863 
+
+2018-11-26T23:46:30+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2035 Fail:0 Unfinished:965 
+
+2018-11-26T23:46:31+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2061 Fail:0 Unfinished:939 
+
+2018-11-26T23:46:32+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2069 Fail:0 Unfinished:931 
+
+2018-11-26T23:46:33+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2083 Fail:0 Unfinished:917 
+
+2018-11-26T23:46:34+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2088 Fail:0 Unfinished:912 
+
+2018-11-26T23:46:35+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2099 Fail:0 Unfinished:901 
+
+2018-11-26T23:46:36+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2112 Fail:0 Unfinished:888 
+
+2018-11-26T23:46:37+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2121 Fail:0 Unfinished:879 
+
+2018-11-26T23:46:38+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2153 Fail:0 Unfinished:847 
+
+2018-11-26T23:46:39+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2202 Fail:0 Unfinished:798 
+
+2018-11-26T23:46:40+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2240 Fail:0 Unfinished:760 
+
+2018-11-26T23:46:41+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2299 Fail:0 Unfinished:701 
+
+2018-11-26T23:46:42+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2346 Fail:0 Unfinished:654 
+
+2018-11-26T23:46:43+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2364 Fail:0 Unfinished:636 
+
+2018-11-26T23:46:44+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2380 Fail:0 Unfinished:620 
+
+2018-11-26T23:46:45+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2389 Fail:0 Unfinished:611 
+
+2018-11-26T23:46:46+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2415 Fail:0 Unfinished:585 
+
+2018-11-26T23:46:47+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2442 Fail:0 Unfinished:558 
+
+2018-11-26T23:46:48+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2492 Fail:0 Unfinished:508 
+
+2018-11-26T23:46:49+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2530 Fail:0 Unfinished:470 
+
+2018-11-26T23:46:50+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2615 Fail:0 Unfinished:385 
+
+2018-11-26T23:46:51+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2651 Fail:0 Unfinished:349 
+
+2018-11-26T23:46:52+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2712 Fail:0 Unfinished:288 
+
+2018-11-26T23:46:53+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2759 Fail:0 Unfinished:241 
+
+2018-11-26T23:46:54+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2850 Fail:0 Unfinished:150 
+
+2018-11-26T23:46:55+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2929 Fail:0 Unfinished:71 
+
+2018-11-26T23:46:56+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2991 Fail:0 Unfinished:9 
+
+2018-11-26T23:46:57+08:00 - INFO [bench-flow.js]: ###test result:### 
+
+2018-11-26T23:46:57+08:00 - INFO [bench-flow.js]: +------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|------|------|-----------|-------------|-------------|-------------|------------|
+| open | 1000 | 0    | 148 tps   | 30.68 s     | 0.68 s      | 19.64 s     | 30 tps     |
++------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2018-11-26T23:46:57+08:00 - INFO [bench-flow.js]: ### resource stats ### 
+
+2018-11-26T23:46:57+08:00 - INFO [bench-flow.js]: +---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Process | node local-client.js(avg)         | 116.2MB     | 115.1MB     | 26.80%   | 7.82%    | -          | -           |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer0.org1.example.co...le-v0 | 9.6MB       | 9.3MB       | 14.94%   | 1.51%    | 953.2KB    | 395.4KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer0.org2.example.co...le-v0 | 13.3MB      | 11.9MB      | 8.39%    | 1.42%    | 1.2MB      | 516.8KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer1.org1.example.co...le-v0 | 7.0MB       | 6.9MB       | 4.24%    | 0.80%    | 562.7KB    | 240.7KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer1.org2.example.co...le-v0 | 6.3MB       | 6.3MB       | 3.79%    | 0.71%    | 297.7KB    | 144.3KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer1.org1.example.com            | 115.3MB     | 112.2MB     | 31.04%   | 20.38%   | 7.2MB      | 6.3MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer0.org2.example.com            | 140.9MB     | 134.0MB     | 42.96%   | 25.45%   | 8.6MB      | 7.2MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer0.org1.example.com            | 114.6MB     | 110.9MB     | 40.45%   | 23.96%   | 8.0MB      | 10.7MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer1.org2.example.com            | 121.5MB     | 118.9MB     | 28.24%   | 17.80%   | 6.5MB      | 3.2MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org1.example.com    | 139.9MB     | 126.4MB     | 72.78%   | 47.37%   | 1.8MB      | 3.3MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | ca.org1.example.com               | 6.5MB       | 6.5MB       | 0.00%    | 0.00%    | 0B         | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org2.example.com    | 118.1MB     | 115.5MB     | 65.55%   | 44.01%   | 1.2MB      | 2.4MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | ca.org2.example.com               | 6.4MB       | 6.4MB       | 0.00%    | 0.00%    | 0B         | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | orderer.example.com               | 50.8MB      | 45.8MB      | 45.37%   | 12.20%   | 4.0MB      | 15.1MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org2.example.com    | 150.6MB     | 138.1MB     | 79.34%   | 48.70%   | 2.0MB      | 3.6MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org1.example.com    | 121.3MB     | 119.0MB     | 65.96%   | 45.55%   | 1.4MB      | 2.8MB       |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+
+ 
+
+2018-11-26T23:46:57+08:00 - INFO [bench-flow.js]: ------ Passed 'open' testing ------ 
+
+2018-11-26T23:46:57+08:00 - INFO [bench-flow.js]: Waiting 5 seconds for the next round... 
+
+2018-11-26T23:46:57+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2018-11-26T23:46:58+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2018-11-26T23:46:59+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:00+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:01+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:02+08:00 - INFO [bench-flow.js]: ###### Testing 'query' ###### 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"cb":"benchmark/simple/query.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":4,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"cb":"benchmark/simple/query.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":4,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"cb":"benchmark/simple/query.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":4,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"cb":"benchmark/simple/query.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":4,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2018-11-26T23:47:02+08:00 - INFO [bench-flow.js]: ------ Test round 4 ------ 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"cb":"benchmark/simple/query.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":4,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: Info: client 26435 start test runFixedNumber():querying accounts 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: Info: client 26446 start test runFixedNumber():querying accounts 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: Info: client 26436 start test runFixedNumber():querying accounts 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: Info: client 26451 start test runFixedNumber():querying accounts 
+
+2018-11-26T23:47:02+08:00 - DEBUG [local-client.js]: Info: client 26441 start test runFixedNumber():querying accounts 
+
+2018-11-26T23:47:02+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2018-11-26T23:47:02+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2018-11-26T23:47:02+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2018-11-26T23:47:02+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2018-11-26T23:47:02+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2018-11-26T23:47:02+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 3000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:03+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3097 Succ: 3090 Fail:0 Unfinished:7 
+
+2018-11-26T23:47:04+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3197 Succ: 3191 Fail:0 Unfinished:6 
+
+2018-11-26T23:47:05+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3298 Succ: 3292 Fail:0 Unfinished:6 
+
+2018-11-26T23:47:06+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3398 Succ: 3395 Fail:0 Unfinished:3 
+
+2018-11-26T23:47:07+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3499 Succ: 3495 Fail:0 Unfinished:4 
+
+2018-11-26T23:47:08+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3599 Succ: 3595 Fail:0 Unfinished:4 
+
+2018-11-26T23:47:09+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3699 Succ: 3694 Fail:0 Unfinished:5 
+
+2018-11-26T23:47:10+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3799 Succ: 3795 Fail:0 Unfinished:4 
+
+2018-11-26T23:47:11+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3899 Succ: 3895 Fail:0 Unfinished:4 
+
+2018-11-26T23:47:12+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3999 Succ: 3995 Fail:0 Unfinished:4 
+
+2018-11-26T23:47:13+08:00 - INFO [bench-flow.js]: ###test result:### 
+
+2018-11-26T23:47:13+08:00 - INFO [bench-flow.js]: +-------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name  | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| query | 1000 | 0    | 100 tps   | 0.34 s      | 0.02 s      | 0.08 s      | 100 tps    |
++-------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2018-11-26T23:47:13+08:00 - INFO [bench-flow.js]: ### resource stats ### 
+
+2018-11-26T23:47:13+08:00 - INFO [bench-flow.js]: +---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Process | node local-client.js(avg)         | 111.0MB     | 110.2MB     | 14.71%   | 11.16%   | -          | -           |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer0.org1.example.co...le-v0 | 9.6MB       | 9.6MB       | 3.78%    | 3.49%    | 592.6KB    | 249.1KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer0.org2.example.co...le-v0 | 13.3MB      | 13.3MB      | 2.13%    | 1.85%    | 309.7KB    | 130.5KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer1.org1.example.co...le-v0 | 7.0MB       | 7.0MB       | 5.30%    | 5.00%    | 879.6KB    | 370.8KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer1.org2.example.co...le-v0 | 6.5MB       | 6.5MB       | 6.96%    | 6.55%    | 1.1MB      | 457.3KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer1.org1.example.com            | 115.5MB     | 115.3MB     | 36.03%   | 34.90%   | 2.6MB      | 2.1MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer0.org2.example.com            | 141.4MB     | 141.4MB     | 12.54%   | 12.19%   | 862.4KB    | 655.1KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer0.org1.example.com            | 114.8MB     | 114.8MB     | 24.98%   | 24.31%   | 1.7MB      | 1.3MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer1.org2.example.com            | 121.7MB     | 121.6MB     | 45.56%   | 44.13%   | 3.4MB      | 2.9MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org1.example.com    | 118.6MB     | 118.6MB     | 36.09%   | 34.05%   | 345.5KB    | 1.0MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | ca.org1.example.com               | 6.5MB       | 6.5MB       | 0.00%    | 0.00%    | 428B       | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org2.example.com    | 115.3MB     | 115.3MB     | 60.07%   | 53.82%   | 895.7KB    | 2.1MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | ca.org2.example.com               | 6.4MB       | 6.4MB       | 0.00%    | 0.00%    | 428B       | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | orderer.example.com               | 50.8MB      | 50.8MB      | 0.01%    | 0.00%    | 428B       | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org2.example.com    | 132.6MB     | 132.6MB     | 19.18%   | 15.55%   | 128.5KB    | 506.9KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org1.example.com    | 119.5MB     | 119.4MB     | 47.46%   | 45.63%   | 607.2KB    | 1.5MB       |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+
+ 
+
+2018-11-26T23:47:13+08:00 - INFO [bench-flow.js]: ------ Passed 'query' testing ------ 
+
+2018-11-26T23:47:13+08:00 - INFO [bench-flow.js]: Waiting 5 seconds for the next round... 
+
+2018-11-26T23:47:13+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:14+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:15+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:16+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:17+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:18+08:00 - INFO [bench-flow.js]: ------ Test round 5 ------ 
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"cb":"benchmark/simple/query.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":5,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"cb":"benchmark/simple/query.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":5,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"cb":"benchmark/simple/query.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":5,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"cb":"benchmark/simple/query.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":5,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"cb":"benchmark/simple/query.js","config":"benchmark/simple/fabric.json","numb":200,"roundIdx":5,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: txUpdateTime: 1000 
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: Info: client 26435 start test runFixedNumber():querying accounts 
+
+2018-11-26T23:47:18+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: Info: client 26451 start test runFixedNumber():querying accounts 
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: Info: client 26446 start test runFixedNumber():querying accounts 
+
+2018-11-26T23:47:18+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2018-11-26T23:47:18+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: Info: client 26441 start test runFixedNumber():querying accounts 
+
+2018-11-26T23:47:18+08:00 - DEBUG [local-client.js]: Info: client 26436 start test runFixedNumber():querying accounts 
+
+2018-11-26T23:47:18+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2018-11-26T23:47:18+08:00 - DEBUG [rateControl.js]: *****
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2018-11-26T23:47:18+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 4000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:19+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4186 Succ: 4019 Fail:0 Unfinished:167 
+
+2018-11-26T23:47:20+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4387 Succ: 4040 Fail:0 Unfinished:347 
+
+2018-11-26T23:47:21+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4590 Succ: 4069 Fail:0 Unfinished:521 
+
+2018-11-26T23:47:22+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4790 Succ: 4088 Fail:0 Unfinished:702 
+
+2018-11-26T23:47:23+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4988 Succ: 4132 Fail:0 Unfinished:856 
+
+2018-11-26T23:47:24+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5000 Succ: 4200 Fail:0 Unfinished:800 
+
+2018-11-26T23:47:25+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5000 Succ: 4221 Fail:0 Unfinished:779 
+
+2018-11-26T23:47:26+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5000 Succ: 4617 Fail:0 Unfinished:383 
+
+2018-11-26T23:47:27+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5000 Succ: 5000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:28+08:00 - INFO [bench-flow.js]: ###test result:### 
+
+2018-11-26T23:47:28+08:00 - INFO [bench-flow.js]: +-------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name  | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| query | 1000 | 0    | 197 tps   | 6.49 s      | 0.04 s      | 4.58 s      | 119 tps    |
++-------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2018-11-26T23:47:28+08:00 - INFO [bench-flow.js]: ### resource stats ### 
+
+2018-11-26T23:47:28+08:00 - INFO [bench-flow.js]: +---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Process | node local-client.js(avg)         | 111.0MB     | 110.6MB     | 22.98%   | 13.57%   | -          | -           |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer0.org1.example.co...le-v0 | 10.8MB      | 9.9MB       | 13.83%   | 5.45%    | 830.8KB    | 246.4KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer0.org2.example.co...le-v0 | 13.5MB      | 13.4MB      | 5.44%    | 2.41%    | 515.6KB    | 185.8KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer1.org1.example.co...le-v0 | 7.0MB       | 7.0MB       | 5.01%    | 2.76%    | 447.8KB    | 149.2KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | dev-peer1.org2.example.co...le-v0 | 10.1MB      | 7.6MB       | 14.13%   | 4.89%    | 787.9KB    | 219.2KB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer1.org1.example.com            | 115.5MB     | 115.5MB     | 35.90%   | 24.47%   | 1.5MB      | 1.4MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer0.org2.example.com            | 141.7MB     | 141.6MB     | 30.51%   | 22.79%   | 1.6MB      | 1.5MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer0.org1.example.com            | 118.5MB     | 115.7MB     | 59.16%   | 42.45%   | 2.5MB      | 2.3MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | peer1.org2.example.com            | 123.4MB     | 122.8MB     | 54.34%   | 40.89%   | 2.2MB      | 2.1MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org1.example.com    | 149.3MB     | 129.4MB     | 80.62%   | 47.14%   | 1015.7KB   | 1.7MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | ca.org1.example.com               | 6.5MB       | 6.5MB       | 0.00%    | 0.00%    | 0B         | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org2.example.com    | 145.9MB     | 125.0MB     | 93.38%   | 44.93%   | 943.4KB    | 1.5MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | ca.org2.example.com               | 6.4MB       | 6.4MB       | 0.00%    | 0.00%    | 0B         | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | orderer.example.com               | 50.8MB      | 50.8MB      | 0.00%    | 0.00%    | 0B         | 0B          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org2.example.com    | 133.2MB     | 132.8MB     | 42.52%   | 24.48%   | 595.5KB    | 1.1MB       |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org1.example.com    | 120.8MB     | 120.0MB     | 41.45%   | 26.36%   | 586.1KB    | 1.0MB       |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+
+ 
+
+2018-11-26T23:47:28+08:00 - INFO [bench-flow.js]: ------ Passed 'query' testing ------ 
+
+2018-11-26T23:47:28+08:00 - INFO [bench-flow.js]: ---------- Finished Test ----------
+ 
+
+2018-11-26T23:47:28+08:00 - INFO [bench-flow.js]: ###all test results:### 
+
+2018-11-26T23:47:28+08:00 - INFO [bench-flow.js]: +------+-------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name  | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | open  | 1000 | 0    | 49 tps    | 15.21 s     | 0.70 s      | 11.36 s     | 32 tps     |
+|------|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| 2    | open  | 1000 | 0    | 99 tps    | 24.86 s     | 0.55 s      | 17.39 s     | 32 tps     |
+|------|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| 3    | open  | 1000 | 0    | 148 tps   | 30.68 s     | 0.68 s      | 19.64 s     | 30 tps     |
+|------|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| 4    | query | 1000 | 0    | 100 tps   | 0.34 s      | 0.02 s      | 0.08 s      | 100 tps    |
+|------|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| 5    | query | 1000 | 0    | 197 tps   | 6.49 s      | 0.04 s      | 4.58 s      | 119 tps    |
++------+-------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2018-11-26T23:47:28+08:00 - INFO [monitor.js]: ### resource stats (maximum) ### 
+
+2018-11-26T23:47:28+08:00 - INFO [monitor.js]: +---------+-----------------------------------+-------------+----------+------------+-------------+
+| TYPE    | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Process | node local-client.js(avg)         | 116.2MB     | 74.02%   | -          | -           |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | dev-peer0.org1.example.co...le-v0 | 10.8MB      | 14.94%   | 1.5MB      | 754.4KB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | dev-peer0.org2.example.co...le-v0 | 13.5MB      | 8.39%    | 1.5MB      | 753.9KB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | dev-peer1.org1.example.co...le-v0 | 7.0MB       | 5.30%    | 900.9KB    | 379.7KB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | dev-peer1.org2.example.co...le-v0 | 10.1MB      | 14.13%   | 1.1MB      | 468.3KB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | peer1.org1.example.com            | 115.5MB     | 36.03%   | 7.2MB      | 6.3MB       |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | peer0.org2.example.com            | 141.7MB     | 42.96%   | 9.6MB      | 12.1MB      |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | peer0.org1.example.com            | 118.5MB     | 59.16%   | 9.6MB      | 15.1MB      |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | peer1.org2.example.com            | 123.4MB     | 54.34%   | 6.9MB      | 3.2MB       |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org1.example.com    | 149.3MB     | 80.62%   | 2.0MB      | 3.8MB       |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | ca.org1.example.com               | 6.5MB       | 0.00%    | 1.4KB      | 0B          |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org2.example.com    | 145.9MB     | 93.38%   | 1.2MB      | 2.5MB       |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | ca.org2.example.com               | 6.4MB       | 0.00%    | 1.4KB      | 0B          |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | orderer.example.com               | 50.8MB      | 50.87%   | 4.5MB      | 16.0MB      |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | couchdb.peer0.org2.example.com    | 150.6MB     | 80.88%   | 2.1MB      | 3.8MB       |
+|---------|-----------------------------------|-------------|----------|------------|-------------|
+| Docker  | couchdb.peer1.org1.example.com    | 121.3MB     | 65.96%   | 1.4MB      | 2.8MB       |
++---------+-----------------------------------+-------------+----------+------------+-------------+
+ 
+
+2018-11-26T23:47:28+08:00 - INFO [bench-flow.js]: Generated report at /home/qmq/tool/caliper/report-20181126T154728.html 
+
+2018-11-26T23:47:28+08:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5000 Succ: 5000 Fail:0 Unfinished:0 
+
+2018-11-26T23:47:28+08:00 - INFO [bench-flow.js]: Executing command: docker-compose -f network/fabric/2org2peer/docker-compose.yaml down;docker rm $(docker ps -aq);docker rmi $(docker images dev* -q) 
+
+2018-11-26T23:47:28+08:00 - INFO [client-util.js]: Client exited  
+
+2018-11-26T23:47:28+08:00 - INFO [client-util.js]: Client exited  
+
+2018-11-26T23:47:28+08:00 - INFO [client-util.js]: Client exited  
+
+2018-11-26T23:47:28+08:00 - INFO [client-util.js]: Client exited  
+
+2018-11-26T23:47:28+08:00 - INFO [client-util.js]: Client exited  
+
+2018-11-26T23:47:28+08:00 - ERROR [monitor-docker.js]: TypeError: Cannot read property 'id' of undefined 
+
+2018-11-26T23:47:39+08:00 - ERROR [bench-flow.js]: Unsuccessful command execution. Error code: 1. Terminating signal: null 
+
+2018-11-26T23:47:39+08:00 - ERROR [benchmark/simple/main.js]: Error while executing the benchmark: Error: Command failed: docker-compose -f network/fabric/2org2peer/docker-compose.yaml down;docker rm $(docker ps -aq);docker rmi $(docker images dev* -q)
+Stopping peer1.org1.example.com         ... 
+Stopping peer0.org2.example.com         ... 
+Stopping peer0.org1.example.com         ... 
+Stopping peer1.org2.example.com         ... 
+Stopping couchdb.peer0.org1.example.com ... 
+Stopping ca.org1.example.com            ... 
+Stopping couchdb.peer1.org2.example.com ... 
+Stopping ca.org2.example.com            ... 
+Stopping orderer.example.com            ... 
+Stopping couchdb.peer0.org2.example.com ... 
+Stopping couchdb.peer1.org1.example.com ... 
+[11A[2KStopping peer1.org1.example.com         ... [32mdone[0m[11B[8A[2KStopping peer1.org2.example.com         ... [32mdone[0m[8B[10A[2KStopping peer0.org2.example.com         ... [32mdone[0m[10B[1A[2KStopping couchdb.peer1.org1.example.com ... [32mdone[0m[1B[5A[2KStopping couchdb.peer1.org2.example.com ... [32mdone[0m[5B[9A[2KStopping peer0.org1.example.com         ... [32mdone[0m[9B[2A[2KStopping couchdb.peer0.org2.example.com ... [32mdone[0m[2B[7A[2KStopping couchdb.peer0.org1.example.com ... [32mdone[0m[7B[3A[2KStopping orderer.example.com            ... [32mdone[0m[3B[6A[2KStopping ca.org1.example.com            ... [32mdone[0m[6B[4A[2KStopping ca.org2.example.com            ... [32mdone[0m[4BRemoving peer1.org1.example.com         ... 
+Removing peer0.org2.example.com         ... 
+Removing peer0.org1.example.com         ... 
+Removing peer1.org2.example.com         ... 
+Removing couchdb.peer0.org1.example.com ... 
+Removing ca.org1.example.com            ... 
+Removing couchdb.peer1.org2.example.com ... 
+Removing ca.org2.example.com            ... 
+Removing orderer.example.com            ... 
+Removing couchdb.peer0.org2.example.com ... 
+Removing couchdb.peer1.org1.example.com ... 
+[6A[2KRemoving ca.org1.example.com            ... [32mdone[0m[6B[4A[2KRemoving ca.org2.example.com            ... [32mdone[0m[4B[8A[2KRemoving peer1.org2.example.com         ... [32mdone[0m[8B[3A[2KRemoving orderer.example.com            ... [32mdone[0m[3B[2A[2KRemoving couchdb.peer0.org2.example.com ... [32mdone[0m[2B[7A[2KRemoving couchdb.peer0.org1.example.com ... [32mdone[0m[7B[5A[2KRemoving couchdb.peer1.org2.example.com ... [32mdone[0m[5B[9A[2KRemoving peer0.org1.example.com         ... [32mdone[0m[9B[10A[2KRemoving peer0.org2.example.com         ... [32mdone[0m[10B[11A[2KRemoving peer1.org1.example.com         ... [32mdone[0m[11B[1A[2KRemoving couchdb.peer1.org1.example.com ... [32mdone[0m[1BRemoving network 2org2peer_default
+Error response from daemon: conflict: unable to delete e3f6fbc0afe3 (must be forced) - image is referenced in multiple repositories
+Error response from daemon: conflict: unable to delete e3f6fbc0afe3 (must be forced) - image is referenced in multiple repositories
+Error response from daemon: conflict: unable to delete e3f6fbc0afe3 (must be forced) - image is referenced in multiple repositories
+
+    at ChildProcess.exithandler (child_process.js:275:12)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at maybeClose (internal/child_process.js:925:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5) 
+
